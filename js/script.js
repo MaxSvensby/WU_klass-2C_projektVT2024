@@ -1,7 +1,7 @@
 let texts = document.querySelectorAll('.logo_text');
 
 texts.forEach(text => {
-    // separera alla bokstäver
+    // separte all letters
     text.innerHTML = text.innerHTML.split('').map((letters, i) => `<span style="transition-delay:${i * 40}ms;filter:hue-rotate(-${i * 10}deg)">${letters}</span>`).join('');
 });
 
